@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.security.config.OauthSecurityAutoConfiguration,\
+  cn.iocoder.oauth.framework.security.config.OauthWebSecurityConfigurerAdapter

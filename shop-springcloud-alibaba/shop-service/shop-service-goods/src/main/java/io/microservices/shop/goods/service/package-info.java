@@ -1,0 +1,1 @@
+package io.microservices.shop.goods.service;

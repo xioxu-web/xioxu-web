@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+dubbo:
+  application:
+    name: Lottery
+    version: 1.0.0
+  protocol:
+    port: 20880
+    name: dubbo
+  registry:
+    address: N/A #multicast://224.5.6.7:1234
+

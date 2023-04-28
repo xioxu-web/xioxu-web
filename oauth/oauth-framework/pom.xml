@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>oauth</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+    <packaging>pom</packaging>
+
+
+    <artifactId>oauth-framework</artifactId>
+    <description>
+    </description>
+    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+
+    <modules>
+        <module>oauth-common</module>
+        <module>oauth-spring-boot-starter-config</module>
+        <module>oauth-spring-boot-starter-monitor</module>
+        <module>oauth-spring-boot-starter-mybatis</module>
+        <module>oauth-spring-boot-starter-redis</module>
+        <module>oauth-spring-boot-starter-web</module>
+        <module>oauth-spring-boot-starter-security</module>
+        <module>oauth-spring-boot-starter-test</module>
+        <module>oauth-spring-boot-starter-biz-operatelog</module>
+        <module>oauth-spring-boot-starter-extension</module>
+        <module>oauth-spring-boot-starter-protection</module>
+        <module>oauth-spring-boot-starter-biz-dict</module>
+        <module>oauth-spring-boot-starter-biz-data-permission</module>
+        <module>oauth-spring-boot-starter-job</module>
+        <module>oauth-spring-boot-starter-biz-pay</module>
+        <module>oauth-spring-boot-starter-biz-sms</module>
+    </modules>
+</project>

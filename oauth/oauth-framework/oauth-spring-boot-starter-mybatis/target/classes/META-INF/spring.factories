@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.datasource.config.OauthDataSourceAutoConfiguration,\
+  cn.iocoder.oauth.framework.mybatis.config.OauthMybatisAutoConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  cn.iocoder.oauth.framework.mybatis.config.IdTypeEnvironmentPostProcessor

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oauth2_project_user_server" />
+      </profile>
+      <profile name="Annotation profile for oauth" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.1.Final/mapstruct-processor-1.4.1.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.1.Final/mapstruct-1.4.1.Final.jar" />
+        </processorPath>
+        <module name="oauth-spring-boot-starter-biz-data-permission" />
+        <module name="oauth-spring-boot-starter-biz-sms" />
+        <module name="oauth-spring-boot-starter-web" />
+        <module name="oauth-module-member-api" />
+        <module name="oauth-spring-boot-starter-mybatis" />
+        <module name="oauth-spring-boot-starter-biz-pay" />
+        <module name="oauth-server" />
+        <module name="oauth-module-market-biz" />
+        <module name="oauth-module-member-biz" />
+        <module name="oauth-spring-boot-starter-config" />
+        <module name="oauth-common" />
+        <module name="oauth-spring-boot-starter-biz-operatelog" />
+        <module name="oauth-module-market-api" />
+        <module name="oauth-spring-boot-starter-test" />
+        <module name="oauth-spring-boot-starter-protection" />
+        <module name="oauth-spring-boot-starter-monitor" />
+        <module name="oauth-spring-boot-starter-job" />
+        <module name="oauth-module-pay-api" />
+        <module name="oauth-module-infra-api" />
+        <module name="oauth-module-product-biz" />
+        <module name="oauth-spring-boot-starter-extension" />
+        <module name="oauth-spring-boot-starter-security" />
+        <module name="oauth-module-pay-biz" />
+        <module name="oauth-module-product-api" />
+        <module name="oauth-module-infra-biz" />
+        <module name="oauth-spring-boot-starter-biz-dict" />
+        <module name="oauth-module-system-api" />
+        <module name="oauth-module-system-biz" />
+        <module name="oauth-spring-boot-starter-redis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aouth-module-member-biz" target="8" />
+      <module name="oauth-admin-server" target="8" />
+      <module name="oauth-admin-system-api" target="8" />
+      <module name="oauth-admin-system-biz" target="8" />
+      <module name="oauth-user-server" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

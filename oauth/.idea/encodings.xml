@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-data-permission/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-data-permission/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-dict/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-dict/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-operatelog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-operatelog/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-pay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-pay/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-sms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-biz-sms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-extension/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-extension/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-protection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-protection/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-framework/oauth-spring-boot-starter-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-infra/oauth-module-infra-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-infra/oauth-module-infra-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-infra/oauth-module-infra-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-infra/oauth-module-infra-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-market-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-market-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-market-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-market-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-product-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-product-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-product-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-mall/oauth-module-product-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-member/oauth-module-member-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-member/oauth-module-member-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-member/oauth-module-member-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-member/oauth-module-member-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-pay/oauth-module-pay-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-pay/oauth-module-pay-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-pay/oauth-module-pay-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-pay/oauth-module-pay-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-system/oauth-module-system-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-system/oauth-module-system-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-system/oauth-module-system-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-module-system/oauth-module-system-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

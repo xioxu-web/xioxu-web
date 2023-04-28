@@ -1,0 +1,4 @@
+cn\iocoder\oauth\framework\test\core\ut\BaseDbUnitTest.class
+cn\iocoder\oauth\framework\test\config\SqlInitializationTestConfiguration.class
+cn\iocoder\oauth\framework\test\core\ut\BaseDbUnitTest$Application.class
+cn\iocoder\oauth\framework\test\core\util\RandomUtils.class

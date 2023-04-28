@@ -1,0 +1,11 @@
+server:
+  port: 8082
+  address: 127.0.0.1
+
+spring:
+  application:
+    name: zookeeper_demo
+
+registry:
+  zk:
+    servers: 127.0.0.1:2181

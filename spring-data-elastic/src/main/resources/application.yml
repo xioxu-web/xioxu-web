@@ -1,0 +1,114 @@
+# 配置端口
+server:
+  port: 8085
+  servlet:
+    context-path: /elastic
+# spring 相关配置
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/quartz?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 1
+      max-active: 20
+      min-idle: 1
+      max-wait: 10000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      validation-query: SELECT 1 FROM DUAL
+      validation-query-timeout: 5000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 30000
+      max-evictable-idle-time-millis: 60000
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat,wall
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    throw-exception-if-no-handler-found: true #
+  resources:
+    add-mappings: false # don't build reflection for resources
+  # elasticsearch 配置
+  elasticsearch:
+    rest:
+      #服务器ip地址
+      uris: http://127.0.0.1:9200
+      #username:
+      #password:
+#Mybatis plus的设置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #显示为true
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl # 打印日志
+  global-config:
+    db-config:
+      id-type: auto #id设置为自增
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath*:mybatis/*.xml
+  type-aliases-package: com.example.springdataelastic.mapper
+
+# Quartz 配置项,对应 QuartzProperties 配置类
+app:
+  quartz:
+    scheduler:
+      instance-name: MyselfScheduler
+      instance-id: AUTO
+      skip-update-check: true
+      job-factory:
+        class: org.quartz.simpl.SimpleJobFactory
+    job-store:
+      class: org.quartz.impl.jdbcjobstore.JobStoreTX
+      driver-delegate-class: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+      datasource: quartzDataSource
+      table-prefix: QRTZ_
+      is-clustered: true
+    thread-pool:
+      class: org.quartz.simpl.SimpleThreadPool
+      thread-count: 10
+    datasource:
+      quartzDataSource:
+        driver: ${spring.datasource.druid.driver-class-name}
+        url: ${spring.datasource.druid.url}
+        username: ${spring.datasource.druid.username}
+        password: ${spring.datasource.druid.password}
+        maxConnections: 5
+        validationQuery: select 0
+        connection-provider:
+          class: com.example.springdataelastic.config.quartz.DruidConnectionProvider
+
+    # HikariPool配置
+    hikari:
+      # 客户端（即您）等待来自池的连接的最大毫秒数
+      connection-timeout: 60000
+      # 控制将测试连接的活动性的最长时间
+      validation-timeout: 3000
+      # 控制允许连接在池中保持空闲状态的最长时间
+      idle-timeout: 60000
+      login-timeout: 5
+      # 控制池中连接的最大生存期
+      max-lifetime: 60000
+      # 控制允许池达到的最大大小，包括空闲和使用中的连接
+      maximum-pool-size: 10
+      # 控制HikariCP尝试在池中维护的最小空闲连接数
+      minimum-idle: 10
+      # 控制默认情况下从池获得的连接是否处于只读模式
+      read-only: false
+
+#--- custom configurations ---#
+#elasticsearch配置
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+  connTimeout: 1000
+  socketTimeout: 300000
+  connectionRequestTimeout: 5000
+  # 不使用fuzzy查询的最小值
+  notUsedFuzzyMinCount: 1

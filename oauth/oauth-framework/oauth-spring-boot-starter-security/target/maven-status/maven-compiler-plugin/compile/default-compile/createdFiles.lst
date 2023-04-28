@@ -1,0 +1,17 @@
+cn\iocoder\oauth\framework\security\config\AuthorizeRequestsCustomizer.class
+cn\iocoder\oauth\framework\security\core\handler\AbstractSignUpUrlAuthenticationSuccessHandler.class
+cn\iocoder\oauth\framework\security\core\service\SecurityAuthFrameworkService.class
+cn\iocoder\oauth\framework\security\core\annotations\PreAuthenticated.class
+cn\iocoder\oauth\framework\security\core\util\SecurityFrameworkUtils.class
+cn\iocoder\oauth\framework\security\core\handler\AccessDeniedHandlerImpl.class
+cn\iocoder\oauth\framework\security\core\enums\DataScopeEnum.class
+cn\iocoder\oauth\framework\security\config\OauthSecurityAutoConfiguration.class
+cn\iocoder\oauth\framework\security\core\context\TransmittableThreadLocalSecurityContextHolderStrategy.class
+cn\iocoder\oauth\framework\security\core\aop\PreAuthenticatedAspect.class
+cn\iocoder\oauth\framework\security\config\SecurityProperties.class
+cn\iocoder\oauth\framework\security\core\filter\TokenAuthenticationFilter.class
+cn\iocoder\oauth\framework\security\core\handler\AuthenticationEntryPointImpl.class
+cn\iocoder\oauth\framework\security\core\handler\LogoutSuccessHandlerImpl.class
+cn\iocoder\oauth\framework\security\core\LoginUser.class
+cn\iocoder\oauth\framework\security\core\service\SecurityPermissionFrameworkService.class
+cn\iocoder\oauth\framework\security\config\OauthWebSecurityConfigurerAdapter.class

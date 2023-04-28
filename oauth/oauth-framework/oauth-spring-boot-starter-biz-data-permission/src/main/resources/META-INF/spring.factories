@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.datapermission.config.OauthDataPermissionAutoConfiguration,\
+  cn.iocoder.oauth.framework.datapermission.config.OauthDeptDataPermissionAutoConfiguration

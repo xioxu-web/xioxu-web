@@ -1,0 +1,6 @@
+io\microservices\shop\jwt\utils\ShopJwtTokenUtil.class
+io\microservices\shop\jwt\common\ResponseCodeEnum.class
+io\microservices\shop\jwt\config\ShopJwtGatewayConfiguration.class
+io\microservices\shop\jwt\common\ResponseResult.class
+META-INF\spring-configuration-metadata.json
+io\microservices\shop\jwt\config\ShopJwtProperties.class

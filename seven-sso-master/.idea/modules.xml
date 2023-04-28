@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/seven-app-test/seven-app-test.iml" filepath="$PROJECT_DIR$/seven-app-test/seven-app-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-auth-admin/seven-auth-admin.iml" filepath="$PROJECT_DIR$/seven-auth-admin/seven-auth-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-app-test/seven-auth-client/seven-auth-client.iml" filepath="$PROJECT_DIR$/seven-app-test/seven-auth-client/seven-auth-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-auth-common/seven-auth-common.iml" filepath="$PROJECT_DIR$/seven-auth-common/seven-auth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-auth-core/seven-auth-core.iml" filepath="$PROJECT_DIR$/seven-auth-core/seven-auth-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-app-test/seven-auth-local/seven-auth-local.iml" filepath="$PROJECT_DIR$/seven-app-test/seven-auth-local/seven-auth-local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-sso.iml" filepath="$PROJECT_DIR$/seven-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-sso-client/seven-sso-client.iml" filepath="$PROJECT_DIR$/seven-sso-client/seven-sso-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-sso-local/seven-sso-local.iml" filepath="$PROJECT_DIR$/seven-sso-local/seven-sso-local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-sso-server/seven-sso-server.iml" filepath="$PROJECT_DIR$/seven-sso-server/seven-sso-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven-sso-ui/seven-sso-ui.iml" filepath="$PROJECT_DIR$/seven-sso-ui/seven-sso-ui.iml" />
+    </modules>
+  </component>
+</project>

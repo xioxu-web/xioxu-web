@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-gateway" />
+        <module name="shop-service-user" />
+        <module name="shop-common-db" />
+        <module name="shop-service-user-api" />
+        <module name="shop-jwt" />
+        <module name="shop-service-goods" />
+        <module name="shop-service-goods-api" />
+        <module name="shop-member" />
+        <module name="shop-service-search-api" />
+        <module name="shop-bean" />
+        <module name="shop-common" />
+        <module name="shop-oauth" />
+        <module name="shop-user-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-nacos" target="8" />
+      <module name="shop-user-oauth" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-bean" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
+      <module name="shop-common-db" options="-parameters" />
+      <module name="shop-gateway" options="-parameters" />
+      <module name="shop-jwt" options="-parameters" />
+      <module name="shop-member" options="-parameters" />
+      <module name="shop-nacos" options="-parameters" />
+      <module name="shop-oauth" options="-parameters" />
+      <module name="shop-service" options="-parameters" />
+      <module name="shop-service-api" options="-parameters" />
+      <module name="shop-service-goods" options="-parameters" />
+      <module name="shop-service-goods-api" options="-parameters" />
+      <module name="shop-service-search" options="-parameters" />
+      <module name="shop-service-search-api" options="-parameters" />
+      <module name="shop-service-user" options="-parameters" />
+      <module name="shop-service-user-api" options="-parameters" />
+      <module name="shop-user-auth" options="-parameters" />
+      <module name="shop-user-oauth" options="-parameters" />
+    </option>
+  </component>
+</project>

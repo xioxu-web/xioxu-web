@@ -1,0 +1,17 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /memberSystem
+
+#oauth2配置
+security:
+  oauth2:
+    client:
+      client-id: UserManagement
+      client-secret: user123
+      access-token-uri: http://localhost:8082/oauth/token
+      user-authorization-uri: http://localhost:8082/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8082/oauth/token_key
+        key-value: user123

@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "shop.jwt",
+      "type": "io.microservices.shop.jwt.config.ShopJwtProperties",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shop.jwt.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否开启JWT，即注入相关的类对象",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    },
+    {
+      "name": "shop.jwt.expiration",
+      "type": "java.lang.Long",
+      "description": "accessToken 有效时间",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    },
+    {
+      "name": "shop.jwt.header",
+      "type": "java.lang.String",
+      "description": "前端向后端传递JWT时使用HTTP的header名称，前后端要统一",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    },
+    {
+      "name": "shop.jwt.pwd-param-name",
+      "type": "java.lang.String",
+      "description": "用户登录-密码参数名称",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties",
+      "defaultValue": "password"
+    },
+    {
+      "name": "shop.jwt.secret",
+      "type": "java.lang.String",
+      "description": "JWT 密钥",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    },
+    {
+      "name": "shop.jwt.skip-valid-url",
+      "type": "java.lang.String",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties"
+    },
+    {
+      "name": "shop.jwt.use-default-controller",
+      "type": "java.lang.Boolean",
+      "description": "是否使用默认的JWTAuthController",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "shop.jwt.user-param-name",
+      "type": "java.lang.String",
+      "description": "用户登录-用户名参数名称",
+      "sourceType": "io.microservices.shop.jwt.config.ShopJwtProperties",
+      "defaultValue": "userId"
+    }
+  ],
+  "hints": []
+}

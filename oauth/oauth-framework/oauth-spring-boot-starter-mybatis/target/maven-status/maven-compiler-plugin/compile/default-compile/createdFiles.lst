@@ -1,0 +1,12 @@
+cn\iocoder\oauth\framework\mybatis\core\mapper\BaseMapperX.class
+cn\iocoder\oauth\framework\datasource\core\enums\DataSourceEnum.class
+cn\iocoder\oauth\framework\mybatis\core\query\LambdaQueryWrapperX.class
+cn\iocoder\oauth\framework\mybatis\core\type\JsonLongSetTypeHandler$1.class
+cn\iocoder\oauth\framework\mybatis\core\dataobject\BaseDO.class
+cn\iocoder\oauth\framework\mybatis\core\query\QueryWrapperX.class
+cn\iocoder\oauth\framework\datasource\core\filter\DruidAdRemoveFilter.class
+cn\iocoder\oauth\framework\datasource\config\OauthDataSourceAutoConfiguration.class
+cn\iocoder\oauth\framework\mybatis\core\util\MyBatisUtils.class
+cn\iocoder\oauth\framework\mybatis\core\type\JsonLongSetTypeHandler.class
+cn\iocoder\oauth\framework\mybatis\config\OauthMybatisAutoConfiguration.class
+cn\iocoder\oauth\framework\mybatis\core\handler\DefaultDBFieldHandler.class

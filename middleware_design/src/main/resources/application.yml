@@ -1,0 +1,25 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /desgin
+#配置During数据源
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    initialSize: 10
+    maxActive: 20
+    maxWait: 60000
+  application:
+    name: example-middleware_design-springboot-helloworld
+#Mybatis plus配置
+mybatis:
+  type-aliases-package: com.example.middleware_design.Domain
+#自定义中间件配置
+service:
+  whitelist:
+    enabled: true
+    userStr: 1001,10002,10003,1004 #白名单用户ID，多个逗号隔开

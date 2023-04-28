@@ -1,0 +1,29 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /mybatis_plus
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 10
+    maxActive: 20
+    maxWait: 60000
+
+#mybatis plus
+mybatis-plus:
+  type-aliases-package: com.example.mybatis_plus_demo.domain
+  type-aliases-super-type: java.lang.Object
+  mapper-location: classpath*:mybatis/*.xml
+  check-config-location: false
+  global-config:
+      db-config: #配置逻辑删除
+        logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+        logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+#日志配置
+
+
+

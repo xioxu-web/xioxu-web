@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: shop-oauth
+
+  profiles:
+    active: local
+server:
+  port: 9001
+
+# auth相关配置
+auth:
+  # token存储到redis的过期时间
+  ttl: 3600
+  # client应用id
+  clientId: changgou
+  # client密钥
+  clientSecret: changgou
+  # cookie域名
+  cookieDomain: localhost
+  cookieMaxAge: -1
+# 本地证书、密钥以及证书密码配置
+encrypt:
+  key-store:
+    # 证书路径（resources路径下）
+    location: classpath:/changgou.jks
+    # 密钥
+    secret: changgou
+    # 证书别名
+    alias: changgou
+    # 证书密码
+    password: changgou
+
+
+
+

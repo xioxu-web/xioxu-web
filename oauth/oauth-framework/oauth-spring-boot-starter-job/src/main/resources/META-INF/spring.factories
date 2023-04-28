@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.quartz.config.OauthQuartzAutoConfiguration,\
+  cn.iocoder.oauth.framework.quartz.config.OauthAsyncAutoConfiguration

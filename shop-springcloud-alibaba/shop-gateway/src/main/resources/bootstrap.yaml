@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: shop-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      enabled: true #开启网关
+      discovery:
+        locator:
+          enabled: true #开启自动路由,以服务id建立路由，服务id默认大写
+          lower-case-service-id: true #服务id设置为小写
+      globalcors: #跨域配置
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: oauth-gateway
+          uri: lb://shop-oauth
+          order: 1
+          predicates:
+            - Path=/shop-oauth/**
+          filters:
+            - StripPrefix=1
+
+        - id: shop-service-user-gateway
+          uri: lb://shop-service-user
+          order: 1
+          predicates:
+            - Path=/shop-service-user/**
+          filters:
+            - StripPrefix=1
+            # 请求数限流, 名字不能随便写, 使用默认的 factory
+            - name: RequestRateLimiter
+              args:
+                # 用户身份唯一识别标识符
+                key-resolver: "#{@ipKeyResolver}"
+                # 每秒钟只允许有 1 个请求
+                redis-rate-limiter.replenishRate: 1
+                # 允许并发有 4 个请求[允许的个数]
+                redis-rate-limiter.burstCapacity: 4
+  #Redis的配置
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+
+server:
+  port: 8080
+
+
+
+
+
+

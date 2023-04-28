@@ -1,0 +1,22 @@
+server:
+  port: 8082
+# 对应 RedisProperties 类
+spring:
+  redis:
+    host: 127.0.0.1
+    password:
+    post: 6379
+    database: 0  # Redis 数据库号，默认为 0
+    timeout: 3000 #连接超时时间
+    jedis:
+      pool:
+        max-active: 8 #连接池最大连接数，默认为 8 。使用负数表示没有限制
+        max-idle: 8 # 默认连接数最大空闲的连接数，默认为 8 。使用负数表示没有限制
+        min-idle: 0 # 默认连接池最小空闲的连接数，默认为 0 。允许设置 0 和 正数
+        max-wait: -1 # 连接池最大阻塞等待时间，单位：毫秒。默认为 -1 ，表示不限制
+#Spring Security 配置项，对应 SecurityProperties 配置类
+  security:
+    user:
+      name: user #账号
+      password: 123456 #密码
+      roles: ADMIN # 拥有角色

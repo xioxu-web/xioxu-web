@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.apilog.config.OauthApiLogAutoConfiguration,\
+  cn.iocoder.oauth.framework.jackson.config.OauthJacksonAutoConfiguration,\
+  cn.iocoder.oauth.framework.swagger.config.OauthSwaggerAutoConfiguration,\
+  cn.iocoder.oauth.framework.web.config.OauthWebAutoConfiguration

@@ -1,0 +1,49 @@
+# spring 相关配置
+spring:
+  application:
+    name: shop-service-user
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/changgou_oauth?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 5
+      max-active: 20
+      min-idle: 1
+      max-wait: 10000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      validation-query: SELECT 1 FROM DUAL
+      validation-query-timeout: 5000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat,wall
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    throw-exception-if-no-handler-found: true #
+  resources:
+    add-mappings: false
+
+#Mybatis plus的设置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #显示为true
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl # 打印日志
+  global-config:
+    db-config:
+      id-type: auto #id设置为自增
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: io.microservices.shop.service.user.mapper
+
+feign:
+  hystrix:
+    enabled: true

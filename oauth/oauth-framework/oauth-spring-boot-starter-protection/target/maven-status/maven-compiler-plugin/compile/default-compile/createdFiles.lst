@@ -1,0 +1,10 @@
+cn\iocoder\oauth\framework\idempotent\core\keyresolver\impl\DefaultIdempotentKeyResolver.class
+cn\iocoder\oauth\framework\lock4j\core\Lock4jRedisKeyConstants.class
+cn\iocoder\oauth\framework\idempotent\core\keyresolver\impl\ExpressionIdempotentKeyResolver.class
+cn\iocoder\oauth\framework\lock4j\config\OauthLock4jConfiguration.class
+cn\iocoder\oauth\framework\idempotent\config\OauthIdempotentConfiguration.class
+cn\iocoder\oauth\framework\idempotent\core\aop\IdempotentAspect.class
+cn\iocoder\oauth\framework\idempotent\core\keyresolver\IdempotentKeyResolver.class
+cn\iocoder\oauth\framework\lock4j\core\DefaultLockFailureStrategy.class
+cn\iocoder\oauth\framework\idempotent\core\annotation\Idempotent.class
+cn\iocoder\oauth\framework\idempotent\core\redis\IdempotentRedisDAO.class

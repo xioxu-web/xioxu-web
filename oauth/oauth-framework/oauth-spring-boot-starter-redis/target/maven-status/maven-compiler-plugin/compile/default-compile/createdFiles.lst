@@ -1,0 +1,5 @@
+cn\iocoder\oauth\framework\redis\config\OauthRedisAutoConfiguration.class
+cn\iocoder\oauth\framework\redis\core\RedisKeyDefine.class
+cn\iocoder\oauth\framework\redis\core\RedisKeyDefine$TimeoutTypeEnum.class
+cn\iocoder\oauth\framework\redis\core\RedisKeyDefine$KeyTypeEnum.class
+cn\iocoder\oauth\framework\redis\core\RedisKeyRegistry.class

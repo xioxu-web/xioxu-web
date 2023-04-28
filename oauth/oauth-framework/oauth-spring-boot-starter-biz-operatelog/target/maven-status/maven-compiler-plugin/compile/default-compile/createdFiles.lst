@@ -1,0 +1,8 @@
+cn\iocoder\oauth\framework\operatelog\core\service\OperateLogFrameworkService.class
+cn\iocoder\oauth\framework\operatelog\core\enums\OperateTypeEnum.class
+cn\iocoder\oauth\framework\operatelog\core\dto\OperateLogCreateReqDTO.class
+cn\iocoder\oauth\framework\operatelog\config\OauthOperateLogAutoConfiguration.class
+cn\iocoder\oauth\framework\operatelog\core\aop\OperateLogAspect$1.class
+cn\iocoder\oauth\framework\operatelog\core\util\OperateLogUtils.class
+cn\iocoder\oauth\framework\operatelog\core\aop\OperateLogAspect.class
+cn\iocoder\oauth\framework\operatelog\core\annotations\OperateLog.class

@@ -1,0 +1,36 @@
+server:
+  port: 8091
+  servlet:
+    context-path: /elasticsearch-project
+
+#spring配置
+spring:
+  application:
+    name: elasticsearch-project
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xxl-job?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis plus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #显示为true
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl # 打印日志
+  global-config:
+    db-config:
+      id-type: auto #id设置为自增
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath*:mybatis/*.xml
+  type-aliases-package: com.example.elasticsearch.project.mapper
+
+#elasticsearch的配置
+elasticsearch:
+  host: 127.0.0.1
+  
+
+

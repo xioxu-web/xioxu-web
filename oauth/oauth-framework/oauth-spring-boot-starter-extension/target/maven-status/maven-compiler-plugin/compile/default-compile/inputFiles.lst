@@ -1,0 +1,13 @@
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\package-info.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\context\AbstractComponentExecutor.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\context\ExtensionExecutor.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\factory\ExtensionDefinition.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\config\OauthExtensionAutoConfiguration.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\point\ExtensionPoint.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\factory\ExtensionFactory.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\context\ExtensionContextHolder.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\stereotype\Extension.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\ExtensionBootstrap.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\factory\ExtensionRegisterFactory.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\BusinessScenario.java
+D:\workspace\oauth\oauth-framework\oauth-spring-boot-starter-extension\src\main\java\cn\iocoder\oauth\framework\extension\core\context\ExtensionContext.java

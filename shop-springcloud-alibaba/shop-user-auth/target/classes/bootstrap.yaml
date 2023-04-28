@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: shop-user-auth
+
+  profiles:
+    active: local
+    include: jwt
+
+server:
+  port: 8070
+
+
+
+

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.iocoder.oauth.framework.idempotent.config.OauthIdempotentConfiguration,\
+  cn.iocoder.oauth.framework.lock4j.config.OauthLock4jConfiguration

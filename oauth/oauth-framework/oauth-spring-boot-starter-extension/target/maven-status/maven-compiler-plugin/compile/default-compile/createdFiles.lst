@@ -1,0 +1,12 @@
+cn\iocoder\oauth\framework\extension\core\factory\ExtensionDefinition.class
+cn\iocoder\oauth\framework\extension\core\context\ExtensionContext.class
+cn\iocoder\oauth\framework\extension\core\stereotype\Extension.class
+cn\iocoder\oauth\framework\extension\core\point\ExtensionPoint.class
+cn\iocoder\oauth\framework\extension\core\ExtensionBootstrap.class
+cn\iocoder\oauth\framework\extension\core\factory\ExtensionFactory.class
+cn\iocoder\oauth\framework\extension\config\OauthExtensionAutoConfiguration.class
+cn\iocoder\oauth\framework\extension\core\factory\ExtensionRegisterFactory.class
+cn\iocoder\oauth\framework\extension\core\context\ExtensionExecutor.class
+cn\iocoder\oauth\framework\extension\core\context\ExtensionContextHolder.class
+cn\iocoder\oauth\framework\extension\core\context\AbstractComponentExecutor.class
+cn\iocoder\oauth\framework\extension\core\BusinessScenario.class
