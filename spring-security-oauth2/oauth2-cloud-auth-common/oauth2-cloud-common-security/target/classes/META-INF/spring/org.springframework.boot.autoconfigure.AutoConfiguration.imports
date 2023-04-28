@@ -1,0 +1,9 @@
+io.microservice.oauth2.cloud.common.security.service.Impl.OauthUserDetailsServiceImpl
+io.microservice.oauth2.cloud.common.security.component.OauthSecurityInnerAspect
+io.microservice.oauth2.cloud.common.security.component.OauthSecurityMessageSourceConfiguration
+io.microservice.oauth2.cloud.common.security.service.OauthRemoteRegisteredClientRepository
+io.microservice.oauth2.cloud.common.security.component.OauthRedisOAuth2AuthorizationService
+
+
+
+

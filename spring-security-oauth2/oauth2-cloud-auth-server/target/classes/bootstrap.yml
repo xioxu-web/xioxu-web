@@ -1,0 +1,48 @@
+server:
+  port: 8082
+
+#spring应用
+spring:
+  application:
+    name: oauth2-cloud-auth-server
+#注册中心配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+  config:
+    import:
+      - optional:nacos:application-@profiles.active@.yml
+      - optional:nacos:${spring.application.name}-@profiles.active@.yml
+
+#Mybatis plus的设置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #显示为true
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl # 打印日志
+  global-config:
+    db-config:
+      id-type: auto #id设置为自增
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: io.microservice.oauth2.cloud.
+
+#redis的配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 15000
+    jedis:
+      pool:
+        max-active: 600
+        max-idle: 300
+        max-wait: 15000
+        min-idle: 10
+
+
+
+
+

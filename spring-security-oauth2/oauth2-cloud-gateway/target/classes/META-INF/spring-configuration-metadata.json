@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "name": "gateway",
+      "type": "io.microservice.oauth2.cloud.gateway.config.GatewayConfigProperties",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.GatewayConfigProperties"
+    },
+    {
+      "name": "swagger",
+      "type": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties"
+    },
+    {
+      "name": "swagger.basic",
+      "type": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties$SwaggerBasic",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties",
+      "sourceMethod": "getBasic()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gateway.encode-key",
+      "type": "java.lang.String",
+      "description": "网关解密登录前端密码 秘钥",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.GatewayConfigProperties"
+    },
+    {
+      "name": "gateway.ignore-clients",
+      "type": "java.util.List<java.lang.String>",
+      "description": "网关不需要校验验证码的客户端",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.GatewayConfigProperties"
+    },
+    {
+      "name": "swagger.basic.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否开启 basic 认证",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties$SwaggerBasic"
+    },
+    {
+      "name": "swagger.basic.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties$SwaggerBasic"
+    },
+    {
+      "name": "swagger.basic.username",
+      "type": "java.lang.String",
+      "description": "用户名",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties$SwaggerBasic"
+    },
+    {
+      "name": "swagger.services",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "io.microservice.oauth2.cloud.gateway.config.SpringDocConfiguration$SwaggerDocProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,10 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.microservice.oauth2.common.core.config.JacksonConfiguration,\
+  io.microservice.oauth2.common.core.config.TaskExecutorConfiguration,\
+  io.microservice.oauth2.common.core.config.WebMvcConfiguration,\
+  io.microservice.oauth2.common.core.util.SpringContextHolder,\
+  io.microservice.oauth2.common.core.config.RedisTemplateConfiguration
+
+
+
+

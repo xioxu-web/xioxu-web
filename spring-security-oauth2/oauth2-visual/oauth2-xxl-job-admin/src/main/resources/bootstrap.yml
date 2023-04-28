@@ -1,0 +1,81 @@
+server:
+  port: 8094
+  servlet:
+    context-path: /xxl-job-admin
+
+### xxl-job-admin config
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1/xxl-job-admin
+      accessToken: default_token
+    executor:
+      appname: ${spring.application.name}
+      address:
+      ip:
+      port: 9999
+      logpath: D:\\log4j2_nacos\\xxl-job\\jobhandler
+      logretentiondays: 30
+
+
+
+#spring 配置
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS-HOST:oauth2-register}:${NACOS-PORT:8848}
+      config:
+        server-addr: ${NACOS-HOST:oauth2-register}:${NACOS-PORT:8848}
+        file-extension: yaml
+        extension-configs:
+          # 必须带文件扩展名，此时 file-extension 的配置对自定义扩展配置的 Data Id 文件扩展名没有影响
+          - data-id: ${spring.nacos.config.prefix}.yaml
+            group: ${spring.nacos.config.group}
+            refresh: true
+          - data-id: ${spring.nacos.config.prefix}-xxl-job.yaml
+            group: ${spring.nacos.config.group}
+            refresh: true
+
+  mvc:
+    static-path-pattern: /static/**
+    settings:
+      number_format: 0.#########
+    servlet:
+      load-on-startup: 0
+
+  ### freemarker
+  freemarker:
+    templateLoaderPath: classpath:/templates/
+    suffix: .ftl
+    charset: UTF-8
+    request-context-attribute: request
+    settings.number_format: 0.##########
+
+# spring boot admin 配置
+management:
+  health:
+    mail:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+### mybatis
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper/*Mapper.xml
+
+
+
+
+
+
+
+
+

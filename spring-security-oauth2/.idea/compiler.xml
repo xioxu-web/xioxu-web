@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oauth2-cloud-redis-starter" />
+        <module name="oauth2-cloud-gateway" />
+        <module name="oauth2-cloud-common-seata" />
+        <module name="oauth2-register" />
+        <module name="oauth2-cloud-common-core" />
+        <module name="oauth2-cloud-common-security" />
+        <module name="oauth_cloud-common-core" />
+        <module name="oauth2-cloud-common-job" />
+        <module name="oauth2-cloud-common-feign" />
+        <module name="oauth2-cloud-common-mybatis" />
+        <module name="oauth2-cloud-common-log" />
+        <module name="oauth2-cloud-common-datasource" />
+        <module name="oauth2-cloud-order-service" />
+        <module name="oauth2-monitor" />
+        <module name="oauth2-sentinel-dashboard" />
+        <module name="oauth2-cloud-upms-api" />
+        <module name="oauth2-common-xss" />
+        <module name="oauth2-cloud-common-swagger" />
+        <module name="oauth2-xxl-job-admin" />
+        <module name="oauth2-cloud-product-service" />
+        <module name="oauth2-cloud-auth-server" />
+        <module name="oauth2-cloud-upms-biz" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="oauth2-cloud-common" target="8" />
+      <module name="oauth2-cloud-common-bom" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+io.microservice.oauth2.cloud.common.feign.OauthFeignAutoConfiguration
+io.microservice.oauth2.cloud.common.feign.sentinel.SentinelAutoConfiguration
+io.microservice.oauth2.cloud.common.feign.sentinel.handler.GlobalBizExceptionHandler

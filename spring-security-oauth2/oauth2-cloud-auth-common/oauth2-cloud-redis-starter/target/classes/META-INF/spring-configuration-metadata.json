@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis",
+      "type": "io.microservice.oauth2.cloud.redis.properties.RedisProperties",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    },
+    {
+      "name": "spring.redis.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    },
+    {
+      "name": "spring.redis.max-wait-millis",
+      "type": "java.lang.Long",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    },
+    {
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    },
+    {
+      "name": "spring.redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "io.microservice.oauth2.cloud.redis.properties.RedisProperties"
+    }
+  ],
+  "hints": []
+}

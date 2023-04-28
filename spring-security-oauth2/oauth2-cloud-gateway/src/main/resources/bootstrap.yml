@@ -1,0 +1,62 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+    gateway:
+      enabled: true #开启网关
+      discovery:
+        locator:
+          enabled: true #开启自动路由,以服务id建立路由，服务id默认大写
+          lower-case-service-id: true #服务id设置为小写
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      globalcors: #跨域配置
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders: "*" #支持的请求头
+      routes:
+        - id: oauth2-cloud-auth-gateway
+          uri: lb://oauth2-cloud-auth-server
+          order: 1
+          predicates:
+            - Path=/oauth2-cloud-auth-server/**
+          filters:
+            - StripPrefix=1
+
+        - id: shop-service-user-gateway
+          uri: lb://shop-service-user
+          order: 1
+          predicates:
+            - Path=/shop-service-user/**
+          filters:
+            - StripPrefix=1
+
+  #Redis的配置
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 15000
+    jedis:
+      pool:
+        max-idle: 600
+        max-active: 300
+        max-wait: 15000
+        min-idle: 10
+
+
+
+
+
